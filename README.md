@@ -10,6 +10,12 @@
 # From zero to hero
 ---
 **Author:** Gregorio Flores
+
+**web:** www.aniachitech.com
+
+**email:** gregorio.flores
+
+
 ---
 ---
 
@@ -821,19 +827,7 @@ X.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -959,19 +953,7 @@ dataframe
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1590,8 +1572,16 @@ Y_test = scaleddf['Close'].values[test_size:].reshape(-1, 1)
 
 ```
 
+---
+---
 
+**Build math model.**
+
+---
 ```python
+
+
+
 xs = tf.placeholder("float")
 ys = tf.placeholder("float")
 
@@ -1624,7 +1614,12 @@ cost_of_test = list()
 
 ```
 
+---
+---
 
+**Train the  model.**
+
+---
 ```python
 
 with tf.Session() as sess:
@@ -1652,7 +1647,9 @@ with tf.Session() as sess:
 <pre>
     ........................................................................................................................................................................................................
     DONE
-    </pre>
+</pre>
+
+
 
 
 
@@ -1735,19 +1732,7 @@ test.corr()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
