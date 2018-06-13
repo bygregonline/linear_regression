@@ -14,14 +14,17 @@
 ---
 
 TODO: FINISH DOCUMENTATION
+
 ---
 TODO: Versión en español
+
 ---
 TODO: Version Française
 
 ---
 
 **Review:** Gregorio Flores
+
 ---
 ---
 
@@ -266,15 +269,17 @@ print()
 
 ```
 
-    [31m____________________________________________________________[0m
-    slope= 10.193621867881548 intercept= -0.4726651480637756
-    [31m____________________________________________________________[0m
-    mean squared error= 2.2136674259681084
-    [31m____________________________________________________________[0m
-    variance 0.9705629331653177
-    [31m____________________________________________________________[0m
+<pre>
+
+____________________________________________________________
+slope= 10.193621867881548 intercept= -0.4726651480637756
+____________________________________________________________
+mean squared error= 2.2136674259681084
+____________________________________________________________
+variance 0.9705629331653177
+____________________________________________________________
     
-    
+</pre>  
 
 
 ---
@@ -282,11 +287,16 @@ print()
 **At this moment we have everything we need**
 
 **the slope:** (m) "sensitivity to change" and the intercept
+
 ---
+
 **Mean Squared Error or MSE:**  Measures the average of the squares of the errors or deviations. In other words, the difference 
 between the estimator and what is estimated.
+
 ---
+
 **Variance:** the expectation from the square deviation of a random variable from its mean. Tha is, the proportion of the variation in the dependent variable that is predictable from the independent variable(s).. Close to 1 is better 
+
 ---
 
 **Let's plot the function**
@@ -631,21 +641,20 @@ print()
 print()
 ```
 
-    [31m____________________________________________________________[0m
-    [35mModel 1=[0m Y=0.00X + 300.588
-    [31m____________________________________________________________[0m
-    [35mmean squared error=[0m 40610.819076079155
-    [31m____________________________________________________________[0m
-    [35mvariance[0m 0.1569505369169052
-    [31m____________________________________________________________[0m
-    [35mModel 2=[0m Y=0.01X + 0.000
-    [31m____________________________________________________________[0m
-    [35mmean squared error=[0m 63199.39861690999
-    [31m____________________________________________________________[0m
-    [35mvariance[0m -0.31197105311633355
-    
-    
-
+<pre>
+____________________________________________________________
+Model 1= Y=0.00X + 300.588
+____________________________________________________________
+mean squared error= 40610.819076079155
+____________________________________________________________
+variance 0.1569505369169052
+____________________________________________________________
+Model 2= Y=0.01X + 0.000
+____________________________________________________________
+mean squared error= 63199.39861690999
+____________________________________________________________
+variance -0.31197105311633355
+</pre>
 
 ---
 
@@ -687,19 +696,7 @@ bos.head(5)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
