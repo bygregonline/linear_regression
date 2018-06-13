@@ -1,27 +1,28 @@
 
-<hr><hr>
-<hr>
+---
+---
+---
 # Linear regression from  simple  math to Artificial Intelligence.
 
-<hr>
-<hr>
+---
+---
 
 # From zero to hero
-<hr>
+---
 **Author:** Gregorio Flores
-<hr>
-<hr>
+---
+---
 
 TODO: FINISH DOCUMENTATION
-<hr>
+---
 TODO: Versión en español
-<hr>
+---
 TODO: Version Française
 
 ---
 
 **Review:** Gregorio Flores
-<hr>
+---
 ---
 
 Before you start
@@ -35,22 +36,22 @@ pip install sklearn pandas numpy  tensorflow py-common-fetch
 
 
 
-First of all, we have to understand what is a linear function and how to create a nice chart using maplotlib 
+First of all, we have to understand what a linear function is and how to create a nice chart using maplotlib. 
 
-<hr>
+---
 
 # This is the well know function
 
-## f(x)=mx+b ## 
+# f(x)=mx+b 
 
-<hr>
+---
 
-The linear function is defined  as a polynomial function in which the variable x has slope
-Such a function is called linear because its graph, the set of all points {\displaystyle (x,f(x))} (x,f(x)) in the Cartesian plane, is a line. The coefficient (m) a is called the slope of the function and of the line.
+A linear function is defined  as a  polynomial function of degree one or less in which the variable x has m as the slope and b as the y intercept.
+Such a function is called linear because its graph, the set of all points {\displaystyle (x,f(x))} (x,f(x)) in the Cartesian plane, is a straight line. The coefficient m is called the slope of the function and of the line, y is the dependent variable, and x is the independent variable.
 
 If the slope is {M} this is a constant function {\displaystyle f(x)=b} {\displaystyle f(x)=b} defining a horizontal line, which some authors exclude from the class of linear function. With this definition, the degree of a linear polynomial would be exactly one, its graph a diagonal line neither vertical nor horizontal. 
 
-<hr>
+---
 
 ** Let's code
 ---
@@ -119,38 +120,37 @@ plt.show()
 
 # Derivative
 
-<hr>
+---
 
-The derivative of a function  measures the sensitivity to change of the function value
-
-
-<hr>
-
-The green line plots y=-7x +23 **Where derivative is -7**
-
-The gold line plots y=2x +23 **Where derivative is 2**
+The derivative of a function measures the rate of change or sensitivity to change of the function value in the independent variable.
 
 
-**Both derivatives measures the sensitive of change** 
+---
 
-<hr>
+The green line plots y=-7x +23 **where the derivative is -7**
+
+The gold line plots y=2x +23 **where the derivative is 2**
 
 
+**Both derivatives measure the rate (sesitivity) of change** 
 
-# Is Time to go back 
+---
 
-<hr>
 
-Let work with  a very simple linear regression 
+# It's time to go back. 
 
-<hr>
+---
 
-**What is a linear regression?**
+Let's work with a very simple linear regression model.
 
-In statistics, linear regression is a linear approach to modelling the relationship between numbers.. Commonly  a series data. 
+---
 
-<hr>
-lets create an array of Y and X
+**What is a linear regression model?**
+
+In statistics, linear regression is a basic type of predictive analysis. It takes a linear approach to modelling the relationship between numbers, commonly a data series. 
+
+---
+Let's create an array of Y and X
 
         1 Print values
         2 Plot the values
@@ -215,13 +215,13 @@ plt.show()
 
 
 ---
-----
+---
 
 
-Now is time to create a great math model using sklearn
+Now it's time to create a great math model using sklearn.
 
 ---
-**lets code**
+**Let's code**
 
 ---
 
@@ -277,21 +277,21 @@ print()
     
 
 
-<hr>
-<hr>
-**At this moment we have everything that we need**
+---
+---
+**At this moment we have everything we need**
 
-**the slope:** (m) "sensitivity to change" an  the interception
-<hr>
-**mean squared error or MSE:** Thats measures the average of the squares of the errors or deviations. The difference 
+**the slope:** (m) "sensitivity to change" and the intercept
+---
+**Mean Squared Error or MSE:**  Measures the average of the squares of the errors or deviations. In other words, the difference 
 between the estimator and what is estimated.
-<hr>
-**Variance:** , is the proportion of the variance in the dependent variable that is predictable from the independent variable(s).. Close to 1 is better 
-<hr>
+---
+**Variance:** the expectation from the square deviation of a random variable from its mean. Tha is, the proportion of the variation in the dependent variable that is predictable from the independent variable(s).. Close to 1 is better 
+---
 
-**let's plot the function**
+**Let's plot the function**
 
-<hr>
+---
 
 
 
@@ -327,17 +327,17 @@ plt.show()
 ![png](output_12_0.png)
 
 
-<hr>
+---
 ---
 
-# Now is time to plot the distance between our model and raw he data
+# Now it's time to plot the distance between our model and the raw data.
 
 ---
-**let's code**
+**Let's code**
 
 ---
 
-<hr>
+---
 
 
 ```python
@@ -406,21 +406,21 @@ plt.show()
 
 
 
-<hr>
+---
 ---
 
 **Right now our math model looks almost perfect.**
-<hr>
+---
 
-Right now  we are not hable to see the intersection.
-<hr>
+Right now we are not able to see the intersection.
+---
 
 **Let's code**
 
     1. insert -1 at beginning
     2. plot the new array 
 
-<hr>
+---
 
 
 
@@ -465,21 +465,21 @@ plt.show()
 ![png](output_17_0.png)
 
 
-<hr>
+---
 
 ---
 
-As we can see our model looks well.
+As we can see our model looks fine.
 
-<hr>
+---
 
 ---
 
 
 
-<hr>
-# Lets work with some complex Big Data
-<hr>
+---
+# Let's work with some complex Big Data
+---
 
     1. create a 1,000,000 data array
     2. add exponencial noise
@@ -489,7 +489,7 @@ As we can see our model looks well.
     6. plot
     7. compare
     
-<hr>
+---
     
     
     
@@ -537,7 +537,7 @@ plt.axvline(0, color='black')
 
 plt.legend()
 
-#coordenadas con interception
+#coordinates with interception
 legend = 'Y={0:.2f}X + {1:.3f}'.format(reg.coef_ [0],reg.intercept_)
 legend2 = 'Y={0:.2f}X + {1:.3f}'.format(reg2.coef_ [0],reg2.intercept_)
 
@@ -547,7 +547,7 @@ y1=x1*reg.coef_ + reg.intercept_
 x2=X[8000][0]
 y2=x2*reg2.coef_ + reg2.intercept_ 
 
-#lets do the math to find the intersection
+#let's do the math to find the intersection
 y_intersection = b/(1-m/m2)
 x_intersection = y_intersection/m2
 
@@ -597,16 +597,16 @@ plt.show()
 ![png](output_20_0.png)
 
 
-<hr>
-<hr>
+---
+---
 **What is the best model?**
 
-<hr>
+---
 
 
 ```python
 
-# lets code
+# let's code
 
 msr=mean_squared_error(Y,predicted_values)
 variance= r2_score(Y,predicted_values)
@@ -647,21 +647,21 @@ print()
     
 
 
-<hr>
+---
 
-<hr>
+---
 
 #  Let's work with multiple linear regressions.
 
-<hr>
+---
     1. Import pandas
-    2. load  Boston House Prices dataset 
-    3. extract price
+    2. Load  Boston house prices dataset 
+    3. Extract price
 
-<hr>
+---
 **Let's code**
 
-<hr>
+---
 
 
 ```python
@@ -952,7 +952,7 @@ description = ['per capita crime rate by town','proportion of residential land z
 lm.intercept_
 dataframe = pd.DataFrame(list(zip(bos.columns,lm.coef_,np.full((len(lm.coef_)), lm.intercept_),description)),columns=['features','estimated_coeffcients','interception','description'])
 
-#We create a new object with all coeffients... Now ist time to plot
+#We create a new object with all the coeffients... Now it's time to plot the
 dataframe
 
 
@@ -1083,14 +1083,14 @@ dataframe
 
 
 
-<hr>
-<hr>
-# VOILA Now we have all values from the linear regression in a new dataset
-<hr>
-<hr>
+---
+---
+# VOILA Now we have all the values from the linear regression in a new dataset
+---
+---
 
 **Let's code**
-<hr>
+---
 
 
 
@@ -1125,17 +1125,17 @@ plt.show()
 ![png](output_29_0.png)
 
 
-<hr>
-<hr>
+---
+---
 
 # ARTIFICIAL INTELIGENCE
 
-<hr>
+---
 **Finally we are going to use tensorflow**
 
 
 
-<hr>
+---
 
 ![alt text](markblogtensorflow.png "Logo Title Text 1")
 
@@ -1143,8 +1143,8 @@ plt.show()
 ---
 
     1. create  numpy arrays (train X & Y)
-    2. create placeholder (how tensorflow store data)
-    3. create model variables where m=weight & b=biad 
+    2. create placeholder (how tensorflow stores data)
+    3. create model variables where m=weight & b=bias 
     4. construct a linear model y=mx+b
     5. reduce reduce de mean squared error
     6. define the optimizer
@@ -1208,7 +1208,7 @@ init = tf.global_variables_initializer()
 ---
 ___
 
-***let's see how this stuff  works**
+***let's see how this stuff works**
 
 
 ____
@@ -1290,22 +1290,22 @@ print(colored('_'*60,'red'))
 
 
 ```
+<pre>
+____________________________________________________________
+sklearn Linear regression 
+____________________________________________________________
+M value: 0.25163494428355404
+B value: 0.7988012261753894
+function: Y=0.2516X +0.799
+____________________________________________________________
+Tensorflow Linear regression 
+____________________________________________________________
+M value: 0.24960834
+B value: 0.80136055
+function: Y=0.2496X +0.801
+____________________________________________________________
 
-    [31m____________________________________________________________[0m
-    sklearn Linear regression 
-    [31m____________________________________________________________[0m
-    [32mM value:[0m 0.25163494428355404
-    [32mB value:[0m 0.7988012261753894
-    [32mfunction:[0m Y=0.2516X +0.799
-    [31m____________________________________________________________[0m
-    Tensorflow Linear regression 
-    [31m____________________________________________________________[0m
-    [32mM value:[0m 0.24960834
-    [32mB value:[0m 0.80136055
-    [32mfunction:[0m Y=0.2496X +0.801
-    [31m____________________________________________________________[0m
-
-
+</pre>
 
 ```python
 
@@ -1344,7 +1344,7 @@ plt.show()
 ---
 
 
-**As we can see there not subtancial diffrecnes between skalearn and the tensorflow model**
+**As we can see there aren't any substantial differences between sklearn and the tensorflow model**
 
 ---
 
@@ -1399,9 +1399,9 @@ plt.show()
 ![png](output_37_0.png)
 
 
-<hr>
-<hr>
-# let's plot the learning curve 
+---
+---
+# Let's plot the learning curve 
 
 ****
 ----
@@ -1441,15 +1441,348 @@ plt.show()
 
 
 ```python
-#
+
 ```
 
-<hr>
-<hr>
-# finally let's do some extra code.
-<hr>
-<hr>
-**Let's going to see what libraries are we using **
+
+---
+---
+
+
+# All the thing together.. let's do something great.. 
+
+---
+
+**Lets code an state of the art regresion.**
+
+---
+
+![alt text](CME-Logo.png "Logo Title Text 1")
+
+
+
+    1. Download Dow Jones Industrial Average   from the  CME group web page as csv format
+    2. Read  data using pandas.
+    3. build a simple linear regresion
+    4. normalize the dataset
+    5. build a very complex Neural network model.
+    6. compare and correlate data.
+    
+---
+---
+
+
+```python
+
+from sklearn.preprocessing import scale
+
+df = pd.read_csv('DJIA.csv') # read data set using pandas
+df.drop(['Adj Close','Volume'],axis=1,inplace=True) # We do not really need this features
+df.Date = pd.to_datetime(df.Date, format='%Y-%m-%d')
+
+scaleddf= pd.DataFrame(columns=df.columns.drop('Date'),data=scale(df.drop(['Date'],axis=1))) #Normalize data
+
+
+
+
+
+```
+
+
+```python
+
+
+plt.clf()
+plt.title('Dow Jones Industrial Average',fontsize=33)
+plt.grid(True)
+
+
+plt.plot(df.Date,df.Close,'#0F0F0F3F', label='Raw Data')
+plt.legend()
+ax = plt.gca()
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
+
+plt.xlabel('YEAR', fontsize=23)
+plt.ylabel('PRICE', fontsize=23)
+
+fig = plt.gcf()
+fig.set_size_inches(18.5, 10.5)
+
+ax = plt.axes([0.103,0.68 ,0.2, 0.2], frameon=True)  # Change the numbers in this array to position your image [left, bottom, width, height])
+ax.imshow(img,alpha=0.092)
+ax.axis('off') 
+
+plt.show()
+
+
+
+
+```
+
+
+![png](output_42_0.png)
+
+
+
+---
+---
+
+**Plot normalized data vs raw data.**
+
+---
+For Neural networks and Machine learning computing. is highly recommended  to normalize data before any kind of analysis
+
+---
+---
+
+
+
+
+```python
+plt.clf()
+
+plt.subplot(1, 2, 1)
+plt.hist(df.Close,color='#0F0F0F3F',label='Raw Data')
+plt.legend()
+
+plt.grid(True)
+
+plt.subplot(1, 2, 2)
+
+plt.hist(scaleddf.Close,color='#AA0F0F3F',label='Normalized')
+plt.legend()
+
+plt.grid(True)
+fig = plt.gcf()
+fig.set_size_inches(18.5, 10.5)
+
+
+ax = plt.axes([0.403,0.38 ,0.2, 0.2], frameon=True)  # Change the numbers in this array to position your image [left, bottom, width, height])
+ax.imshow(img,alpha=0.092)
+ax.axis('off') 
+plt.show()
+
+```
+
+
+![png](output_44_0.png)
+
+
+
+```python
+# build train and test np arrays
+
+test_size= scaleddf.shape[0]-300 # 300 to validate and test
+X_train = scaleddf.drop(['Close'],axis=1).values[:]  # The full data set to train the networkl
+Y_train = scaleddf['Close'].values[:].reshape(-1, 1)
+
+X_test = scaleddf.drop(['Close'],axis=1).values[test_size:]
+Y_test = scaleddf['Close'].values[test_size:].reshape(-1, 1)
+
+
+
+```
+
+
+```python
+
+
+
+
+
+```
+
+
+```python
+xs = tf.placeholder("float")
+ys = tf.placeholder("float")
+
+W_1 = tf.Variable(tf.random_uniform([3,10]))
+b_1 = tf.Variable(tf.zeros([10]))
+layer_1 = tf.add(tf.matmul(xs,W_1), b_1)
+layer_1 = tf.nn.relu(layer_1)
+
+
+W_2 = tf.Variable(tf.random_uniform([10,10]))
+b_2 = tf.Variable(tf.zeros([10]))
+layer_2 = tf.add(tf.matmul(layer_1,W_2), b_2)
+layer_2 = tf.nn.relu(layer_2)
+
+
+
+W_O = tf.Variable(tf.random_uniform([10,1]))
+b_O = tf.Variable(tf.zeros([1]))
+tf_math_model = tf.add(tf.matmul(layer_2,W_O), b_O)
+# The same as previous example our mean squared error cost function
+cost = tf.reduce_mean(tf.square(tf_math_model-ys))
+# also the same. Gradinent Descent
+train = tf.train.GradientDescentOptimizer(0.001).minimize(cost)
+#Itartion to train the model
+iterations=200 
+
+
+cost_of_train= list()
+cost_of_test = list()
+
+```
+
+
+```python
+
+with tf.Session() as sess:
+    # Initiate session and initialize all vaiables
+    sess.run(tf.global_variables_initializer())
+    saver = tf.train.Saver()
+    #saver.restore(sess,'yahoo_dataset.ckpt')
+    for i in range(iterations):
+        for j in range(X_train.shape[0]):
+            sess.run([cost,train],feed_dict=    {xs:X_train[j].reshape(1,3), ys:Y_train[j]})
+            # Run cost and train with each sample
+        cost_of_train.append(sess.run(cost, feed_dict={xs:X_train,ys:Y_train}))
+        cost_of_test.append(sess.run(cost, feed_dict={xs:X_test,ys:Y_test}))
+        #print('Epoch :',i,'Cost :',c_t[i])
+        print('.',end='')
+    pred = sess.run(tf_math_model, feed_dict={xs:X_test})
+    print('DONE')
+
+
+
+
+
+
+```
+<pre>
+    ........................................................................................................................................................................................................
+    DONE
+    </pre>
+
+
+
+```python
+plt.plot(df.Date[test_size:],Y_test,label="Original Data")
+plt.plot(df.Date[test_size:],pred,label="Predicted Data")
+plt.legend(loc='best')
+plt.ylabel('Stock Value intervalue')
+plt.xlabel('Days')
+plt.title('Stock Market DJI')
+plt.grid()
+ax = plt.gca()
+ax.spines['right'].set_visible(False)
+ax.spines['top'].set_visible(False)
+fig = plt.gcf()
+fig.set_size_inches(18.5, 10.5)
+
+
+ax = plt.axes([0.713,0.18 ,0.2, 0.2], frameon=True)  # Change the numbers in this array to position your image [left, bottom, width, height])
+ax.imshow(img,alpha=0.092)
+ax.axis('off') 
+plt.show()
+
+
+
+```
+
+
+![png](output_49_0.png)
+
+
+---
+---
+
+# Our  model looks almost perfect..
+
+
+---
+---
+
+
+```python
+import seaborn as sns
+
+Y_test.flatten()
+d = {'raw': Y_test.flatten(), 'prediction': pred.flatten()}
+test = pd.DataFrame(d)
+
+
+
+cmap = sns.diverging_palette(250, -15, n=190)
+
+
+plt.title('Correlation Index')
+
+sns.heatmap(test.corr(), cmap=cmap, center=0, square=True, linewidths=.2, cbar_kws={"shrink": .6}, annot=True)
+fig = plt.gcf()
+fig.set_size_inches(18.5, 10.5)
+ax = plt.axes([.60, 0.43, 0.10, 0.6], frameon=True)
+ax.imshow(img, alpha=0.142)
+ax.axis('off')
+plt.show()
+
+
+
+```
+
+
+![png](output_51_0.png)
+
+
+
+```python
+
+
+test.corr()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>raw</th>
+      <th>prediction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>raw</th>
+      <td>1.000000</td>
+      <td>0.997718</td>
+    </tr>
+    <tr>
+      <th>prediction</th>
+      <td>0.997718</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+---
+---
+# Finally let's do some extra code.
+---
+**Now, let's see what libraries we are using **
 
 ---
 
@@ -1468,36 +1801,37 @@ W.printWelcome()
 
 ```
 
-    [35m+------------------------------------------+[0m
-    [1m[34mAniachi Technologies.[0m
-    [1m[34mComputer:            [0m [35mgreg@MacBook-Pro-de-gregorio.local[0m
-    [1m[34mScript:              [0m [35m-m[0m
-    [1m[34mApi version:         [0m [35m1013[0m
-    [1m[34mPath:                [0m [35m/usr/local/opt/python/bin/python3.6[0m
-    [1m[34mInstalled Packages:  [0m [35m291[0m
-    [1m[34mNative Compiler:     [0m [35mGCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1)[0m
-    [1m[34mArchitecture:        [0m [35mi386[0m
-    [1m[34mKernel:              [0m [35mx86_64  Darwin Kernel version 17.6.0[0m
-    [1m[34mCPU Info:            [0m [35mIntel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz[0m
-    [1m[34mScreen resolution:   [0m [35mNot implemented yet....[0m
-    [1m[34mPython Version:      [0m [35m3.6.5[0m
-    [1m[34mProcessors:          [0m [35m4[0m
-    [1m[34mTerminal:            [0m [35mTerminal not found[0m
-    [1m[34mUser:                [0m [35mgreg[0m
-    [1m[34mCurrent process:     [0m [35m6901[0m
-    [1m[34mCode version:        [0m [35mbeta[0m
-    [1m[34mTotal Memory:        [0m [35m16.00 GiB[0m
-    [1m[34mAvailable Memory:    [0m [35m3.74 GiB[0m
-    [1m[34mFree Memory:         [0m [35m2.09 GiB[0m
-    [1m[34mUsed Memory:         [0m [35m11.40 GiB[0m
-    [1m[34mActive Memory:       [0m [35m7.05 GiB[0m
-    [1m[34mInactive Memory:     [0m [35m1.65 GiB[0m
-    [1m[34mWired Memory:        [0m [35m2.71 GiB[0m
-    [1m[34mCurrent path:        [0m [35m/projects/python/python3.5/notebook/linearR[0m
-    [1m[34mCurrent date:        [0m [35m2018-06-10 18:04:37.537988[0m
-    [1m[34mElapsed time:        [0m [35m6384.574690818787[0m
-    [35m+------------------------------------------+[0m
-
+<pre>
++------------------------------------------+
+Aniachi Technologies.
+Computer:             greg@MacBook-Pro-de-gregorio.local
+Script:               -m
+Api version:          1013
+Path:                 /usr/local/opt/python/bin/python3.6
+Installed Packages:   291
+Native Compiler:      GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.1)
+Architecture:         i386
+Kernel:               x86_64  Darwin Kernel version 17.6.0
+CPU Info:             Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz
+Screen resolution:    Not implemented yet....
+Python Version:       3.6.5
+Processors:           4
+Terminal:             Terminal not found
+User:                 greg
+Current process:      6901
+Code version:         beta
+Total Memory:         16.00 GiB
+Available Memory:     3.74 GiB
+Free Memory:          2.09 GiB
+Used Memory:          11.40 GiB
+Active Memory:        7.05 GiB
+Inactive Memory:      1.65 GiB
+Wired Memory:         2.71 GiB
+Current path:         /projects/python/python3.5/notebook/linearR
+Current date:         2018-06-10 18:04:37.537988
+Elapsed time:         6384.574690818787
++------------------------------------------+
+</pre>
 
 
 ```python
@@ -1505,16 +1839,16 @@ W.printLibsVersion(['termcolor','pandas','numpy','sklearn','py-common-fetch','te
                   
                   )
 ```
-
-    [35m-----------------[0m
-    [32mjupyter-client   [0m [35m5.2.3[0m
-    [32mjupyter-core     [0m [35m4.4.0[0m
-    [32mnotebook         [0m [35m5.5.0[0m
-    [32mnumpy            [0m [35m1.14.3[0m
-    [32mpandas           [0m [35m0.23.0[0m
-    [32mpy-common-fetch  [0m [35m0.176[0m
-    [32msklearn          [0m [35m0.0[0m
-    [32mtensorflow       [0m [35m1.8.0[0m
-    [35m-----------------[0m
-    [32mTotal modules [0m [35m8[0m
-
+<pre>
+-----------------
+jupyter-client    5.2.3
+jupyter-core      4.4.0
+notebook          5.5.0
+numpy             1.14.3
+pandas            0.23.0
+py-common-fetch   0.176
+sklearn           0.0
+tensorflow        1.8.0
+-----------------
+Total modules  8
+</pre>
